@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 // Config (so we can serve static files reliably)
 const __dirname = dirname(fileURLToPath(import.meta.url)) + sep;
 const cfg = {
-  port: process.env.PORT || 3000,
+  port: process.env.PORT || 8888,
   dir: {
     static: __dirname + 'static' + sep,
     views: __dirname + 'views' + sep
